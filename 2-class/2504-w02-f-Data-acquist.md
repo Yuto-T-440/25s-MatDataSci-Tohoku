@@ -26,7 +26,7 @@ header-includes:
   - "\\usepackage[utf8]{inputenc}"
 ---
 
-# Week 2: Materials Informatics: Introduction to Materials Data Science
+# Week 2: Data Acquisition and Preparation 
 ## **Pawan K. Tripathi**
 Research Assistant Professor
 Case Western Reserve University, Cleveland, Ohio, USA
@@ -35,29 +35,25 @@ Case Western Reserve University, Cleveland, Ohio, USA
 * **Format:** 6 remote sessions (90 mins each) via [Zoom]
 * **Tools:** [Google Colab](https://colab.research.google.com/#scrollTo=-Rh3-Vt9Nev9) (free, web-based Python environment)
 
-* **Communication:** [Platform Name, e.g., Slack, Email List] for questions & announcements
+* **Communication:** [Slack, Email] for questions & announcements
 * **Materials:** Slides & Colab notebooks provided before class
 * **Expectations:** Active participation, willingness to learn basic Python/data concepts.
 
-
-*![image](https://github.com/user-attachments/assets/b0961504-0e12-480f-9cc3-ea339b5f929d)*
-##### (Source:Hitachi)
-
 ---
 
-# Class 2: Representing Materials Data for Computers
+#  Representing Materials Data for Computers
 
 **Turning Physical Materials into Digital Information**
 
 ---
 
-## Today's Agenda (90 Minutes)
+## Today's Agenda 
 
-1.  **Recap & Q&A** (10 min) - What is MI? Why do we need it?
-2.  **Types of Materials Data** (25 min) - Composition, Structure, Processing, Properties.
-3.  **Features & Descriptors** (25 min) - Making data machine-readable.
-4.  **Hands-on Demo Outline (Colab)** (25 min) - Loading data, basic featurization.
-5.  **Q&A & Look Ahead** (5 min)
+1.  **Recap & Q&A**  - What is MI? Why do we need it?
+2.  **Types of Materials Data**  - Composition, Structure, Processing, Properties.
+3.  **Features & Descriptors** - Making data machine-readable.
+4.  **Hands-on Demo Outline (Colab)**  - Loading data, basic featurization.
+5.  **Q&A & Look Ahead** 
 
 ---
 
@@ -91,8 +87,7 @@ How do we describe a material?
 
     ![Comparison of crystalline (ordered) vs amorphous (disordered) atomic structures](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Crystalline_vs_Amorphous.svg/500px-Crystalline_vs_Amorphous.svg.png)
     *(Caption: Atomic arrangement matters: Ordered (crystalline) vs. Disordered (amorphous))*
-    *(Note: Please check image license for reuse terms)*
-
+   
 ---
 
 ## Types of Materials Data (Continued)
@@ -122,7 +117,7 @@ How do we describe a material?
 
     ![Illustration of a data table with rows for samples and columns for features](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Feature_vector_illustration.svg/600px-Feature_vector_illustration.svg.png)
     *(Caption: Transforming raw data into a structured feature table)*
-    *(Note: Please check image license for reuse terms)*
+ 
 
     | Material | Feature 1 (e.g., Avg Atomic #) | Feature 2 (e.g., Avg Electronegativity) | ... | Target Property |
     | :------- | :----------------------------- | :-------------------------------------- | :-: | :-------------- |
@@ -148,7 +143,7 @@ How do we describe a material?
 
     ![Periodic Table of Elements](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Periodic_table_large.svg/800px-Periodic_table_large.svg.png)
     *(Caption: Elemental properties from the periodic table form the basis for compositional features)*
-    *(Note: Please check image license for reuse terms)*
+  
 
 ---
 
