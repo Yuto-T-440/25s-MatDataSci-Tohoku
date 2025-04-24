@@ -13,6 +13,8 @@
 ------------------------------------------------------------------------
 *Note: The Syllabus will be updated as the course progresses.
 
+[Slide-Deck](https://docs.google.com/presentation/d/1M8dWOFLPDPPynYphiVFuP2NaY_qnD27fKJI74EVuJhE/edit#slide=id.g34fc33a5d01_0_291)
+
 ## Detailed Syllabus
 ### Module 1: Introduction to Materials Data Science 
 
