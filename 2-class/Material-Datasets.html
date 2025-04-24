@@ -1,0 +1,563 @@
+<h1 id="awesome-materials-chemistry-datasets">Awesome Materials &amp;
+Chemistry Datasets</h1>
+<p>Adapted from <a
+href="https://github.com/blaiszik/awesome-matchem-datasets/tree/main">Awesome
+Materials &amp; Chemistry Datasets</a> A curated list of the most useful
+datasets in <strong>materials science</strong> and
+<strong>chemistry</strong> for training <strong>machine
+learning</strong> and <strong>AI foundation models</strong>. This
+includes experimental, computational, and literature-mined
+datasets—prioritizing <strong>open-access</strong> resources and
+community contributions.</p>
+<p>This document aims to: - Catalog the best datasets by domain, type,
+quality, and size - Support reproducible research in AI for chemistry
+and materials - Provide a community-driven resource with contributions
+from researchers and developers</p>
+<hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#how-to-use">How to Use</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#datasets">Datasets</a>
+<ul>
+<li><a href="#computational-datasets">Computational (DFT, MD)</a></li>
+<li><a href="#experimental-datasets">Experimental</a></li>
+<li><a href="#llm-training-datasets">LLM Training</a></li>
+<li><a href="#literature-mined--text-datasets">Literature-mined &amp;
+Text</a></li>
+<li><a href="#proprietary-datasets">Proprietary</a></li>
+</ul></li>
+<li><a href="#license">License</a></li>
+<li><a href="#acknowledgements">Acknowledgements</a></li>
+</ul>
+<hr />
+<h2 id="how-to-use">How to Use</h2>
+<ul>
+<li>Explore datasets by domain or data type using the tables below</li>
+<li>Click the <strong>access links</strong> to explore or download the
+data</li>
+<li>Sort/filter by quality, size, and suitability for ML models</li>
+<li>Fork the repo and submit a pull request to add new datasets</li>
+</ul>
+<hr />
+<h2 id="datasets">Datasets</h2>
+<h3 id="computational-datasets">Computational Datasets</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 17%" />
+<col style="width: 18%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 4%" />
+</colgroup>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Domain</th>
+<th>Size</th>
+<th>Type</th>
+<th>Format</th>
+<th>License</th>
+<th>Access</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OMat24 (Meta)</td>
+<td>Inorganic crystals</td>
+<td>110M DFT entries</td>
+<td>Computational</td>
+<td>JSON/HDF5</td>
+<td>CC BY 4.0</td>
+<td>Open</td>
+<td><a
+href="https://huggingface.co/datasets/fairchem/OMAT24">OMat24</a></td>
+</tr>
+<tr>
+<td>Materials Project (LBL)</td>
+<td>Inorganic crystals</td>
+<td>500k+ compounds</td>
+<td>Computational</td>
+<td>JSON/API</td>
+<td>CC BY 4.0</td>
+<td>Open</td>
+<td><a href="https://materialsproject.org">materialsproject.org</a></td>
+</tr>
+<tr>
+<td>Open Catalyst 2020 (OC20)</td>
+<td>Catalysis (surfaces)</td>
+<td>1.2M relaxations</td>
+<td>Computational</td>
+<td>JSON/HDF5</td>
+<td>CC BY 4.0</td>
+<td>Open</td>
+<td><a
+href="https://opencatalystproject.org">opencatalystproject.org</a></td>
+</tr>
+<tr>
+<td>AFLOW</td>
+<td>Inorganic materials</td>
+<td>3.5M materials</td>
+<td>Computational</td>
+<td>REST API</td>
+<td>Open</td>
+<td>Open</td>
+<td><a href="https://aflow.org">aflow.org</a></td>
+</tr>
+<tr>
+<td>OQMD</td>
+<td>Inorganic solids</td>
+<td>1M+ compounds</td>
+<td>Computational</td>
+<td>SQL/CSV</td>
+<td>Open</td>
+<td>Open</td>
+<td><a href="https://oqmd.org">oqmd.org</a></td>
+</tr>
+<tr>
+<td>JARVIS-DFT (NIST)</td>
+<td>3D/2D materials</td>
+<td>40k+ entries</td>
+<td>Computational</td>
+<td>JSON/API</td>
+<td>Open</td>
+<td>Open</td>
+<td><a href="https://jarvis.nist.gov">jarvis.nist.gov</a></td>
+</tr>
+<tr>
+<td>Carolina Materials DB</td>
+<td>Hypothetical crystals</td>
+<td>214k structures</td>
+<td>Computational</td>
+<td>JSON</td>
+<td>CC BY 4.0</td>
+<td>Open</td>
+<td><a href="http://www.carolinamatdb.org">carolinamatdb.org</a></td>
+</tr>
+<tr>
+<td>NOMAD</td>
+<td>Various DFT/MD</td>
+<td>&gt;19M calculations</td>
+<td>Computational</td>
+<td>JSON</td>
+<td>CC BY 4.0</td>
+<td>Open</td>
+<td><a
+href="https://nomad-lab.eu/prod/v1/gui/search/entries/search/entries">NOMAD
+Repository</a></td>
+</tr>
+<tr>
+<td>MatPES</td>
+<td>DFT Potential Energy Surfaces</td>
+<td>~400,000 structures from 300K MD simulations</td>
+<td>Computational</td>
+<td>JSON</td>
+<td></td>
+<td>Open</td>
+<td><a href="https://matpes.ai">MatPES</a></td>
+</tr>
+<tr>
+<td>Vector-QM24</td>
+<td>Small organic and inorganic molecules</td>
+<td>836k conformational isomers</td>
+<td>Computational</td>
+<td>JSON</td>
+<td>Placeholder</td>
+<td>Open</td>
+<td><a href="https://doi.org/10.5281/zenodo.11164951">V-QM24</a></td>
+</tr>
+<tr>
+<td>AIMNet2 Dataset</td>
+<td>Non-metallic compounds</td>
+<td>20M hybrid DFT calculations</td>
+<td>Computational</td>
+<td>JSON</td>
+<td>Open</td>
+<td>Open</td>
+<td><a href="https://doi.org/10.1184/R1/27629937.v1">AIMNet</a></td>
+</tr>
+<tr>
+<td>RDB7</td>
+<td>Barrier height and enthalpy for small organic reactions</td>
+<td>12k CCSD(T)-F12 calculations</td>
+<td>Computational</td>
+<td>CSV</td>
+<td>Open</td>
+<td>Open</td>
+<td><a href="https://zenodo.org/records/13328872">Zenodo</a></td>
+</tr>
+<tr>
+<td>RDB19-Rad</td>
+<td>ΔG of activation and of reaction for organic reactions in 40 common
+solvents</td>
+<td>5.6k DFT + COSMO-RS calculations</td>
+<td>Computational</td>
+<td>CSV</td>
+<td>Open</td>
+<td>Open</td>
+<td><a href="https://zenodo.org/records/11493786">Zenodo</a></td>
+</tr>
+<tr>
+<td>QCML</td>
+<td>Small molecules consisting of up to 8 heavy atoms</td>
+<td>14.7B Semi-empirical + 33.5M DFT calculations</td>
+<td>Computational</td>
+<td>TFDS</td>
+<td>CC BY-NC 4.0</td>
+<td>Open</td>
+<td><a href="https://zenodo.org/records/14859804">Zenodo</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="experimental-datasets">Experimental Datasets</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 17%" />
+<col style="width: 18%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 4%" />
+</colgroup>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Domain</th>
+<th>Size</th>
+<th>Type</th>
+<th>Format</th>
+<th>License</th>
+<th>Access</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Crystallography Open Database</td>
+<td>Crystal structures</td>
+<td>523k+ entries</td>
+<td>Experimental</td>
+<td>CIF</td>
+<td>Public Domain</td>
+<td>Open</td>
+<td><a
+href="https://www.crystallography.net">crystallography.net</a></td>
+</tr>
+<tr>
+<td>NIST ICSD (subset)</td>
+<td>Inorganic structures</td>
+<td>~290k structures</td>
+<td>Experimental</td>
+<td>CIF</td>
+<td>Proprietary</td>
+<td>Restricted</td>
+<td><a
+href="https://icsd.products.fiz-karlsruhe.de">icsd.products.fiz-karlsruhe.de</a></td>
+</tr>
+<tr>
+<td>CSD (Cambridge)</td>
+<td>Organic crystals</td>
+<td>~1.3M structures</td>
+<td>Experimental</td>
+<td>CIF</td>
+<td>Proprietary</td>
+<td>Restricted</td>
+<td><a href="https://www.ccdc.cam.ac.uk">ccdc.cam.ac.uk</a></td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2503.05577">opXRD</a></td>
+<td>Crystal structures</td>
+<td>92552 (2179 labeled)</td>
+<td>Experimental</td>
+<td>JSON</td>
+<td>CC BY 4.0</td>
+<td>Open</td>
+<td><a
+href="https://doi.org/10.5281/zenodo.14254270">zenodo.org</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="llm-training-datasets">LLM Training Datasets</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 17%" />
+<col style="width: 18%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 4%" />
+</colgroup>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Domain</th>
+<th>Size</th>
+<th>Type</th>
+<th>Format</th>
+<th>License</th>
+<th>Access</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SmolInstruct</td>
+<td>Small molecules</td>
+<td>3.3M samples</td>
+<td>LLM Training</td>
+<td>JSON</td>
+<td>CC BY 4.0</td>
+<td>Open</td>
+<td><a
+href="https://huggingface.co/datasets/osunlp/SMolInstruct">SmolInstruct</a></td>
+</tr>
+<tr>
+<td>CAMEL</td>
+<td>Chemistry</td>
+<td>20K problem-solution pairs</td>
+<td>LLM Training</td>
+<td>JSON</td>
+<td>Open</td>
+<td>Open</td>
+<td><a
+href="https://huggingface.co/datasets/camel-ai/chemistry">CAMEL</a></td>
+</tr>
+<tr>
+<td>ChemNLP</td>
+<td>Chemistry</td>
+<td>Extensive, many combined datasets</td>
+<td>LLM Training</td>
+<td>JSON</td>
+<td>Open</td>
+<td>Open</td>
+<td><a href="https://github.com/OpenBioML/chemnlp">ChemNLP</a></td>
+</tr>
+<tr>
+<td>MaScQA</td>
+<td>Materials Science</td>
+<td>640 QA pairs</td>
+<td>LLM Training</td>
+<td>XLSX</td>
+<td>Open</td>
+<td>Open</td>
+<td><a href="https://github.com/abhijeetgangan/MaSTeA">MaScQA</a></td>
+</tr>
+<tr>
+<td>SciCode</td>
+<td>Research Coding in Physics, Math, Material Science, Biology, and
+Chemistry</td>
+<td>338 subproblems</td>
+<td>LLM Training</td>
+<td>JSON</td>
+<td>Open</td>
+<td>Open</td>
+<td><a href="https://scicode-bench.github.io">SciCode</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="literature-mined-text-datasets">Literature-mined &amp; Text
+Datasets</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 17%" />
+<col style="width: 18%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 8%" />
+<col style="width: 4%" />
+</colgroup>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Domain</th>
+<th>Size</th>
+<th>Type</th>
+<th>Format</th>
+<th>License</th>
+<th>Access</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PubChem</td>
+<td>Molecules &amp; data</td>
+<td>119M compounds</td>
+<td>Literature</td>
+<td>SMILES/SDF</td>
+<td>Public Domain</td>
+<td>Open</td>
+<td><a
+href="https://pubchem.ncbi.nlm.nih.gov">pubchem.ncbi.nlm.nih.gov</a></td>
+</tr>
+<tr>
+<td>USPTO Reactions</td>
+<td>Organic reactions</td>
+<td>1.8M reactions</td>
+<td>Literature</td>
+<td>RXN/SMILES</td>
+<td>Open</td>
+<td>Open</td>
+<td><a href="http://bit.ly/USPTOpatents">USPTO MIT</a></td>
+</tr>
+<tr>
+<td>Open Reaction Database (ORD)</td>
+<td>Synthetic reactions</td>
+<td>~1M reactions</td>
+<td>Experimental/Lit</td>
+<td>JSON</td>
+<td>CC BY 4.0</td>
+<td>Open</td>
+<td><a
+href="https://open-reaction-database.org">open-reaction-database.org</a></td>
+</tr>
+<tr>
+<td>PatCID (IBM)</td>
+<td>Chemical image data</td>
+<td>81M images / 13M mols</td>
+<td>Literature</td>
+<td>PNG/SMILES</td>
+<td>Open</td>
+<td>Open</td>
+<td><a
+href="https://github.com/DS4SD/PatCID">github.com/DS4SD/PatCID</a></td>
+</tr>
+<tr>
+<td>MatScholar</td>
+<td>NLP corpus (materials)</td>
+<td>5M+ abstracts</td>
+<td>Literature</td>
+<td>JSON/Graph</td>
+<td>Open</td>
+<td>Open</td>
+<td><a href="https://matscholar.com">matscholar.com</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="proprietary-datasets-for-reference">Proprietary Datasets (for
+reference)</h3>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 22%" />
+<col style="width: 23%" />
+<col style="width: 11%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Domain</th>
+<th>Size</th>
+<th>Access</th>
+<th>Use Case Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CAS Registry</td>
+<td>Chemical substances</td>
+<td>250M+ substances</td>
+<td>Proprietary</td>
+<td>Industry standard for molecule indexing</td>
+</tr>
+<tr>
+<td>Reaxys (Elsevier)</td>
+<td>Reactions &amp; properties</td>
+<td>Millions of reactions</td>
+<td>Proprietary</td>
+<td>Rich curated literature reaction data</td>
+</tr>
+<tr>
+<td>Citrine Informatics DB</td>
+<td>Experimental materials</td>
+<td>Private</td>
+<td>Proprietary</td>
+<td>Materials ML platform w/ industry data</td>
+</tr>
+<tr>
+<td>CSD (Cambridge)</td>
+<td>Organic crystals</td>
+<td>1.3M+</td>
+<td>Proprietary</td>
+<td>Gold-standard X-ray structures</td>
+</tr>
+<tr>
+<td><a href="https://polymer.nims.go.jp/en/">PoLyInfo</a></td>
+<td>Polymers &amp; properties</td>
+<td>500k+ data points / Experimental</td>
+<td>Proprietary</td>
+<td>Polymer properties from literature sources</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-resources">Dataset Resources</h3>
+<ul>
+<li><a href="https://www.materialsdatafacility.org">The Materials Data
+Facility</a> - Over 100 TB of open materials data. #TODO list some of
+these in the tables above</li>
+<li><a href="https://materialsdatafacility.org/portal">Foundry-ML</a>
+<em>search Foundry</em> - 61 structured datasets ready for download
+through a Python client #TODO list some of these in the tables
+above</li>
+</ul>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>Classify and add <a href="https://www.criptapp.org">CRIPT</a> for
+polymer data</li>
+<li>Classify and add <a href="https://khazana.gatech.edu">Polymer
+Genome</a> and other datasets from Khazana</li>
+<li>A dataset on solubilities of gases in polymers (15 000 experimental
+measurements of 79 gases’ uptakes (0.01–50 wt%) in 102 different
+polymers, pressures from 1 × 10−3 to 7 × 102 bar and temperatures from
+233 to 508 K, includes nearly 500 solvent–polymer systems). Optimized
+structures of various repeating units are included. Should it be of
+interest for you, it is available here: <a
+href="https://github.com/Shorku/rhnet/tree/main/data">Data</a></li>
+<li>Add <a href="https://www.materialscloud.org/discover/menu">Materials
+Cloud Datasets</a></li>
+<li>Classify <a href="https://atomly.net/#/">Atomly</a>. A bit
+challenging with non-English</li>
+<li>Look into adding NOMAD for experimental data as well</li>
+<li>Review <a href="https://alexandria.icams.rub.de">Alexandria
+Materials</a></li>
+<li>Add A Quantum-Chemical Bonding Database for Solid-State Materials
+Part 1: https://zenodo.org/records/8091844 Part 2:
+https://zenodo.org/records/8092187</li>
+<li><h2 id="add-qm-datasets.-httpquantum-machine.orgdatasets">Add QM
+datasets. http://quantum-machine.org/datasets/</h2></li>
+</ul>
+<h3 id="other-links">Other Links</h3>
+<ul>
+<li><a
+href="https://github.com/tilde-lab/awesome-materials-informatics">Awesome
+Materials Informatics</a></li>
+</ul>
+<hr />
+<h2 id="license">License</h2>
+<p>This project is licensed under the <strong>MIT License</strong>. Each
+dataset listed has its <strong>own license</strong>, noted in the table.
+Always check the source’s license before using the data in your
+project.</p>
+<hr />
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>Thanks to the open data and research communities including: - Meta AI
+FAIR - The Materials Data Facility / Foundry-ML - NIST JARVIS and
+Materials Project - LBL, MIT, CCDC, FIZ Karlsruhe - Contributors to Open
+Catalyst, PubChem, ORD, and AFLOW - Developers of open chemistry
+toolkits (RDKit, Open Babel)</p>
+<hr />
