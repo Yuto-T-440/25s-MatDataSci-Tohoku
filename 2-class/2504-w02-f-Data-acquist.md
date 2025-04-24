@@ -40,7 +40,10 @@ Case Western Reserve University, Cleveland, Ohio, USA
 * **Expectations:** Active participation, willingness to learn basic Python/data concepts.
 
 ---
-
+#  Project Ideas
+* Identify a dataset from the given sources or on your own
+* - Use graph learning/GNNs
+  - Or Image processing/Semantic segmentation deep learning
 #  Representing Materials Data for Computers
 
 **Turning Physical Materials into Digital Information**
