@@ -1,4 +1,4 @@
-# Awesome Materials & Chemistry Datasets
+# Materials & Chemistry Datasets
 Adapted from [Awesome Materials & Chemistry Datasets](https://github.com/blaiszik/awesome-matchem-datasets/tree/main)
 A curated list of the most useful datasets in **materials science** and **chemistry** for training **machine learning** and **AI foundation models**. This includes experimental, computational, and literature-mined datasets—prioritizing **open-access** resources and community contributions.
 
@@ -121,6 +121,7 @@ This document aims to:
 
 ### Other Links
 * [Awesome Materials Informatics](https://github.com/tilde-lab/awesome-materials-informatics)
+* [HydraGNN](https://info.ornl.gov/sites/publications/Files/Pub206055.pdf#page=22.09)
 
 ---
 

@@ -1,59 +1,10 @@
 <h1
-id="class-1-materials-informatics-introduction-to-materials-data-science">Class
-1: Materials Informatics: Introduction to Materials Data Science</h1>
+id="week-2-materials-informatics-introduction-to-materials-data-science">Week
+2: Materials Informatics: Introduction to Materials Data Science</h1>
 <h2 id="pawan-k.-tripathi"><strong>Pawan K. Tripathi</strong></h2>
 <p>Research Assistant Professor Case Western Reserve University,
 Cleveland, Ohio, USA</p>
-<hr />
-<h2 id="todays-agenda">Today’s Agenda</h2>
-<ol type="1">
-<li><strong>Welcome &amp; Course Overview</strong></li>
-<li><strong>What are “Materials”?</strong> (Conceptual View)</li>
-<li><strong>What is Data Science &amp; AI?</strong> (Review &amp;
-Context)</li>
-<li><strong>Why Combine Them? Introduction to Materials Informatics
-(MI)</strong></li>
-<li><strong>MI Workflow Overview</strong></li>
-<li><strong>Q&amp;A and Next Steps</strong></li>
-</ol>
-<hr />
-<h2 id="course-goals">Course Goals</h2>
 <ul>
-<li>Understand <strong>what</strong> Materials Informatics (MI) is and
-<strong>why</strong> it’s important.</li>
-<li>Learn about the <strong>types of data</strong> used in MI.</li>
-<li>Explore how <strong>data science and machine learning</strong> are
-applied to materials problems.</li>
-<li>Get hands-on experience with basic <strong>MI tools and
-workflows</strong> (using Python).</li>
-<li>Appreciate the <strong>challenges and future potential</strong> of
-the field.</li>
-</ul>
-<p><strong>No prior Materials Science background is required!</strong>
-We focus on the data perspective.</p>
-<hr />
-<h2 id="course-overview">Course Overview</h2>
-<p>This course provides an introduction to the emerging field of
-Materials Informatics, which applies data science and machine learning
-techniques to accelerate the discovery, design, and development of new
-materials. Students will learn how to acquire, analyze, and model
-materials data to solve real-world materials science problems.</p>
-<h2 id="course-objectives">Course Objectives</h2>
-<p>Upon successful completion of this course, students will be able
-to:</p>
-<ul>
-<li><p>Understand the fundamental concepts of Materials
-Informatics.</p></li>
-<li><p>Apply data mining and machine learning techniques to materials
-data.</p></li>
-<li><p>Utilize Python libraries for materials data analysis and
-modeling.</p></li>
-<li><p>Design and execute materials discovery workflows.</p></li>
-<li><p>Evaluate the performance of machine learning models in materials
-science.</p></li>
-<li><p>Communicate materials informatics findings effectively.</p></li>
-<li><p>Finish a project leveraging deep learning, graph learning for the
-materials image or tabular data ## Course Logistics</p></li>
 <li><p><strong>Format:</strong> 6 remote sessions (90 mins each) via
 [Zoom]</p></li>
 <li><p><strong>Tools:</strong> <a
@@ -66,182 +17,287 @@ before class</p></li>
 <li><p><strong>Expectations:</strong> Active participation, willingness
 to learn basic Python/data concepts.</p></li>
 </ul>
-<hr />
-<h2 id="part-1-what-are-materials-the-conceptual-view">Part 1: What are
-“Materials”? (The Conceptual View)</h2>
-<ul>
-<li><p>Think beyond just “stuff”. Materials are substances engineered
-for specific <strong>properties</strong> and
-<strong>applications</strong>.</p></li>
-<li><p><strong>Examples:</strong></p>
-<ul>
-<li><strong>Strong but light metals:</strong> Aerospace (Aluminum
-alloys)</li>
-<li><strong>Efficient energy converters:</strong> Solar cells (Silicon,
-Perovskites)</li>
-<li><strong>Flexible conductors:</strong> Wearable electronics
-(Conducting polymers)</li>
-<li><strong>Biocompatible implants:</strong> Medical devices (Titanium,
-Polymers)</li>
-<li><strong>Hard coatings:</strong> Cutting tools (Titanium
-Nitride)</li>
-</ul></li>
-<li><p><strong>Traditional Goal of Materials Science:</strong> Design
-and discover new materials with desired properties through
-experimentation and physical understanding.</p></li>
-</ul>
 <p><em><img
 src="https://github.com/user-attachments/assets/b0961504-0e12-480f-9cc3-ea339b5f929d"
 alt="image" /></em> ##### (Source:Hitachi)</p>
 <hr />
-<h2 id="categories-of-materials-high-level">Categories of Materials
-(High Level)</h2>
-<ul>
-<li><strong>Metals:</strong> Strong, conduct electricity/heat (e.g.,
-Steel, Copper, Aluminum)</li>
-<li><strong>Ceramics:</strong> Hard, heat-resistant, insulators (e.g.,
-Glass, Concrete, Alumina)</li>
-<li><strong>Polymers (Plastics):</strong> Lightweight, flexible,
-insulators (e.g., Polyethylene, PVC, Nylon)</li>
-<li><strong>Composites:</strong> Combinations for unique properties
-(e.g., Carbon fiber reinforced polymer)</li>
-</ul>
-<p><strong>Key Idea:</strong> The arrangement of atoms and molecules
-dictates a material’s properties!</p>
+<h1 id="class-2-representing-materials-data-for-computers">Class 2:
+Representing Materials Data for Computers</h1>
+<p><strong>Turning Physical Materials into Digital
+Information</strong></p>
 <hr />
-<h2 id="part-2-what-is-data-science-ai-review-context">Part 2: What is
-Data Science &amp; AI? (Review &amp; Context)</h2>
-<ul>
-<li><strong>Data Science:</strong> The practice of extracting knowledge
-and insights from data.</li>
-<li><strong>Artificial Intelligence (AI):</strong> Creating systems that
-can perform tasks typically requiring human intelligence.</li>
-<li><strong>Machine Learning (ML):</strong> A subset of AI where systems
-learn patterns from data without being explicitly programmed for each
-task. <img
-src="https://github.com/user-attachments/assets/ff88bd7e-4d09-4b16-998d-fedabc1476c4"
-alt="image" /></li>
-</ul>
-<hr />
-<h2 id="key-data-science-activities">Key Data Science Activities</h2>
-<ul>
-<li><strong>Data Collection:</strong> Gathering raw information.</li>
-<li><strong>Data Cleaning/Preprocessing:</strong> Fixing errors,
-handling missing values, formatting data. (Often 80% of the work!)</li>
-<li><strong>Exploratory Data Analysis (EDA):</strong> Understanding data
-through statistics and visualization.</li>
-<li><strong>Modeling (Machine Learning):</strong> Building predictive
-models (e.g., predicting a property).</li>
-<li><strong>Visualization:</strong> Communicating insights effectively
-through charts and graphs.</li>
-<li><strong>Deployment:</strong> Putting models into practice.</li>
-</ul>
-<p><strong>Key Idea:</strong> Data science provides the
-<strong>tools</strong> to analyze complex information and make
-predictions.</p>
-<hr />
-<h2 id="part-3-why-combine-materials-science-and-data-science">Part 3:
-Why Combine Materials Science and Data Science?</h2>
-<ul>
-<li><strong>The Challenge:</strong> Traditional materials discovery is
-often:
-<ul>
-<li><strong>Slow:</strong> Relies on intuition and many
-experiments.</li>
-<li><strong>Expensive:</strong> Lab equipment, materials, time.</li>
-<li><strong>Complex:</strong> Huge number of possible material
-combinations. (Imagine trying all possible recipes!) <img
-src="https://github.com/user-attachments/assets/fcfa4982-7659-46f1-8027-93a5eb6aaa71"
-alt="image" /> —</li>
-</ul></li>
-</ul>
-<h2 id="enter-materials-informatics-mi">Enter: Materials Informatics
-(MI)</h2>
-<ul>
-<li><strong>Definition:</strong> An emerging field that applies the
-principles of <strong>data science</strong> and <strong>AI</strong> to
-solve problems in <strong>materials science and
-engineering</strong>.</li>
-<li><strong>Goal:</strong> Accelerate the discovery, design, and
-deployment of new materials.</li>
-<li>Inspired by concepts like the <strong>Materials Genome Initiative
-(MGI)</strong>: Aiming to halve the time and cost of bringing new
-materials to market.</li>
-</ul>
-<p><em><img
-src="https://github.com/user-attachments/assets/2e38735d-127c-4d08-8e7a-5f22243707c8"
-alt="image" /></em> ######
-(Source:https://www.hitachi-hightech.com/us/en/products/ict-solution/randd/mi/)</p>
-<hr />
-<h2 id="what-can-mi-do-examples">What Can MI Do? Examples:</h2>
-<ul>
-<li><strong>Predict Properties:</strong> Estimate a material’s hardness,
-melting point, conductivity, or stability <em>before</em> making it in
-the lab, based only on its composition or structure.</li>
-<li><strong>Discover New Candidates:</strong> Search vast databases of
-potential materials to find promising candidates for a specific
-application (e.g., a better battery material).</li>
-<li><strong>Optimize Processes:</strong> Use data from manufacturing to
-improve material quality or reduce waste.</li>
-<li><strong>Extract Knowledge:</strong> Analyze scientific literature
-automatically to find trends or hidden correlations. <img
-src="https://github.com/user-attachments/assets/fe264a5c-8215-414b-9bb0-30869e8fc585"
-alt="image" /> ##### (Source: Matminer) —</li>
-</ul>
-<h2 id="part-4-a-simple-mi-workflow">Part 4: A Simple MI Workflow</h2>
+<h2 id="todays-agenda-90-minutes">Today’s Agenda (90 Minutes)</h2>
 <ol type="1">
-<li><strong>Data Acquisition:</strong>
+<li><strong>Recap &amp; Q&amp;A</strong> (10 min) - What is MI? Why do
+we need it?</li>
+<li><strong>Types of Materials Data</strong> (25 min) - Composition,
+Structure, Processing, Properties.</li>
+<li><strong>Features &amp; Descriptors</strong> (25 min) - Making data
+machine-readable.</li>
+<li><strong>Hands-on Demo Outline (Colab)</strong> (25 min) - Loading
+data, basic featurization.</li>
+<li><strong>Q&amp;A &amp; Look Ahead</strong> (5 min)</li>
+</ol>
+<hr />
+<h2 id="recap-class-1-key-ideas">Recap: Class 1 Key Ideas</h2>
 <ul>
-<li>Get data from experiments, simulations (computational
-chemistry/physics), databases (like Materials Project), or
-literature.</li>
-<li><em>Challenge: Data can be sparse, noisy, heterogeneous.</em></li>
+<li><strong>Materials Science:</strong> Aims to find/design materials
+with desired <strong>properties</strong> (strength, conductivity,
+etc.).</li>
+<li><strong>Data Science:</strong> Uses tools to find patterns, build
+models, and make predictions from <strong>data</strong>.</li>
+<li><strong>Materials Informatics (MI):</strong> Combines both to
+<strong>accelerate</strong> materials discovery and design using
+data-driven approaches.</li>
+<li><strong>Simple Workflow:</strong> Acquire Data -&gt; Represent Data
+-&gt; Build Model -&gt; Predict -&gt; Validate.</li>
+</ul>
+<p><strong>Any questions from last time?</strong></p>
+<hr />
+<h2 id="part-1-types-of-materials-data">Part 1: Types of Materials
+Data</h2>
+<p>How do we describe a material?</p>
+<ol type="1">
+<li><strong>Composition:</strong> <em>What</em> elements are in it, and
+how much of each?
+<ul>
+<li>Examples: <span
+class="math inline"><em>H</em><sub>2</sub><em>O</em></span>, <span
+class="math inline"><em>N</em><em>a</em><em>C</em><em>l</em></span>,
+<span
+class="math inline"><em>F</em><em>e</em><sub>0.8</sub><em>N</em><em>i</em><sub>0.2</sub></span>,
+<span
+class="math inline"><em>A</em><em>l</em><sub>2</sub><em>O</em><sub>3</sub></span></li>
+<li>Digital Representation:
+<ul>
+<li>String: <code>"Fe2O3"</code></li>
+<li>Dictionary/Map: <code>{'Fe': 2, 'O': 3}</code></li>
+<li>List of elements + fractions:
+<code>(['Al', 'O'], [0.4, 0.6])</code></li>
 </ul></li>
-<li><strong>Data Representation / Featurization:</strong>
-<ul>
-<li>Convert material information (composition, structure) into numerical
-features computers can understand.</li>
-<li><em>Challenge: How to best represent complex material
-characteristics?</em></li>
 </ul></li>
-<li><strong>Model Building (Machine Learning):</strong>
+<li><strong>Structure:</strong> <em>How</em> are the atoms arranged in
+space?
 <ul>
-<li>Train ML models (regression, classification) to learn relationships
-between features and properties.</li>
-<li><em>Challenge: Choosing the right model, avoiding
-overfitting.</em></li>
+<li>Crucial! Graphite vs. Diamond (both Carbon, different structure
+-&gt; different properties).</li>
+<li>Concepts: Crystal lattice, unit cell, atomic coordinates. (We won’t
+dive deep into crystallography).</li>
+<li>Digital Representation: Standard file formats (CIF, POSCAR), lists
+of atomic positions, symmetry information (space group).</li>
+<li><em>Key Idea:</em> Structure determines many properties.</li>
+</ul>
+<img
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Crystalline_vs_Amorphous.svg/500px-Crystalline_vs_Amorphous.svg.png"
+alt="Comparison of crystalline (ordered) vs amorphous (disordered) atomic structures" />
+<em>(Caption: Atomic arrangement matters: Ordered (crystalline)
+vs. Disordered (amorphous))</em> <em>(Note: Please check image license
+for reuse terms)</em></li>
+</ol>
+<hr />
+<h2 id="types-of-materials-data-continued">Types of Materials Data
+(Continued)</h2>
+<ol start="3" type="1">
+<li><strong>Processing:</strong> <em>How</em> was the material made?
+<ul>
+<li>Examples: Temperature, pressure, cooling rate, synthesis method
+(e.g., casting, sputtering, 3D printing).</li>
+<li>Digital Representation: Numerical values (e.g.,
+<code>Temperature: 1200 K</code>), categorical labels (e.g.,
+<code>Method: 'Sol-Gel'</code>).</li>
+<li><em>Key Idea:</em> Processing influences the final structure and
+properties.</li>
 </ul></li>
-<li><strong>Prediction / Discovery:</strong>
+<li><strong>Properties:</strong> <em>What</em> can the material do?
+(Often the target of our predictions!)
 <ul>
-<li>Use the model to predict properties of new/unseen materials or
-screen candidates.</li>
-<li><em>Challenge: How reliable are the predictions?</em></li>
-</ul></li>
-<li><strong>Validation:</strong>
-<ul>
-<li>Test the most promising predictions through targeted experiments or
-simulations.</li>
-<li><em>Challenge: Closing the loop back to the real world.</em> <img
-src="https://github.com/user-attachments/assets/48789981-0610-4782-bba7-32710f6f9514"
-alt="image" /> ***
-(Source:https://link.springer.com/chapter/10.1007/978-981-99-7456-6_4)</li>
+<li><strong>Mechanical:</strong> Hardness, Strength, Elasticity (Young’s
+Modulus)</li>
+<li><strong>Electronic:</strong> Conductivity (Metal/Insulator), Band
+Gap (Semiconductors)</li>
+<li><strong>Thermal:</strong> Melting Point, Thermal Conductivity</li>
+<li><strong>Magnetic:</strong> Magnetization</li>
+<li><strong>Optical:</strong> Color, Refractive Index</li>
+<li>Digital Representation: Numerical values (e.g.,
+<code>Band Gap: 1.1 eV</code>), categorical (e.g.,
+<code>Magnetic: True</code>).</li>
 </ul></li>
 </ol>
 <hr />
-<h2 id="part-5-qa-and-next-steps">Part 5: Q&amp;A and Next Steps</h2>
+<h2 id="part-2-features-descriptors---making-data-machine-readable">Part
+2: Features &amp; Descriptors - Making Data Machine-Readable</h2>
+<ul>
+<li><p>Computers and ML models need <strong>numerical input</strong>. We
+can’t just feed them “NaCl”.</p></li>
+<li><p><strong>Featurization:</strong> The process of converting raw
+material information (like composition or structure) into a vector
+(list) of numerical values called <strong>features</strong> or
+<strong>descriptors</strong>.</p></li>
+<li><p><strong>Goal:</strong> Create a table (like a spreadsheet or
+<code>pandas</code> DataFrame) where:</p>
+<ul>
+<li>Rows = Materials</li>
+<li>Columns = Numerical Features</li>
+</ul>
+<p><img
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Feature_vector_illustration.svg/600px-Feature_vector_illustration.svg.png"
+alt="Illustration of a data table with rows for samples and columns for features" />
+<em>(Caption: Transforming raw data into a structured feature
+table)</em> <em>(Note: Please check image license for reuse
+terms)</em></p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 31%" />
+<col style="width: 41%" />
+<col style="width: 3%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Material</th>
+<th style="text-align: left;">Feature 1 (e.g., Avg Atomic #)</th>
+<th style="text-align: left;">Feature 2 (e.g., Avg
+Electronegativity)</th>
+<th style="text-align: center;">…</th>
+<th style="text-align: left;">Target Property</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">NaCl</td>
+<td style="text-align: left;">14.0</td>
+<td style="text-align: left;">2.1</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: left;">1074 K (Melt Pt)</td>
+</tr>
+<tr>
+<td style="text-align: left;">SiC</td>
+<td style="text-align: left;">10.0</td>
+<td style="text-align: left;">2.2</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: left;">3103 K (Melt Pt)</td>
+</tr>
+<tr>
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: left;">…</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<hr />
+<h2 id="simple-compositional-features">Simple Compositional
+Features</h2>
+<ul>
+<li><p>Features derived <em>only</em> from the chemical formula (e.g.,
+<span
+class="math inline"><em>A</em><em>l</em><sub>2</sub><em>O</em><sub>3</sub></span>).</p></li>
+<li><p>Based on properties of the constituent elements (found in
+periodic table data).</p></li>
+<li><p><strong>Examples:</strong></p>
+<ul>
+<li>Average atomic number</li>
+<li>Average atomic weight</li>
+<li>Sum of atomic weights</li>
+<li>Range/Difference in electronegativity between elements</li>
+<li>Average number of valence electrons</li>
+<li>Fraction of metallic elements</li>
+</ul></li>
+<li><p><strong>Why?</strong> These simple numbers capture some essence
+of the chemistry without needing complex structural info. Easy to
+calculate!</p>
+<p><img
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Periodic_table_large.svg/800px-Periodic_table_large.svg.png"
+alt="Periodic Table of Elements" /> <em>(Caption: Elemental properties
+from the periodic table form the basis for compositional features)</em>
+<em>(Note: Please check image license for reuse terms)</em></p></li>
+</ul>
+<hr />
+<h2 id="structural-features-conceptual">Structural Features
+(Conceptual)</h2>
+<ul>
+<li>Features derived from the 3D arrangement of atoms.</li>
+<li>Often more powerful predictors, but require structural data (which
+isn’t always available).</li>
+<li><strong>Examples (High Level):</strong>
+<ul>
+<li>Density (Mass / Volume)</li>
+<li>Unit cell volume</li>
+<li>Space group (A classification of crystal symmetry - treated as a
+category)</li>
+<li>Coordination numbers (How many neighbors each atom has)</li>
+<li>Bond lengths and angles</li>
+<li>More complex graph-based or topological descriptors</li>
+</ul></li>
+<li><em>We will focus more on compositional features in this intro
+course for simplicity.</em></li>
+</ul>
+<hr />
+<h2 id="part-3-hands-on-demo-outline-google-colab">Part 3: Hands-on Demo
+Outline (Google Colab)</h2>
+<ul>
+<li><p><strong>Goal:</strong> Load a simple materials dataset and
+generate basic compositional features.</p></li>
+<li><p><strong>Tools:</strong> <code>pandas</code> (for data tables),
+maybe <code>pymatgen</code> or <code>matminer</code> (for
+materials-specific tools).</p></li>
+<li><p><strong>Steps:</strong></p>
+<ol type="1">
+<li><p><strong>Load Data:</strong> Read a CSV file containing material
+compositions (e.g., formulas like “NaCl”, “Fe2O3”) and maybe a target
+property (e.g., melting point).</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import pandas as pd</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># df = pd.read_csv(&#39;simple_materials.csv&#39;)</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># print(df.head())</span></span></code></pre></div></li>
+<li><p><strong>Represent Composition:</strong> Show how
+<code>pandas</code> stores the formula string. Discuss converting it to
+a more structured format if needed (e.g., using
+<code>pymatgen.Composition</code>).</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># from pymatgen.core import Composition</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># comp_obj = Composition(&quot;Fe2O3&quot;)</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># print(comp_obj.get_atomic_fraction(&quot;Fe&quot;))</span></span></code></pre></div></li>
+<li><p><strong>Featurization (Simple Example):</strong></p>
+<ul>
+<li>Calculate a simple feature manually using element data (e.g.,
+average atomic mass). Need a dictionary or source for element
+properties.</li>
+<li><em>OR</em> Introduce a library function (like
+<code>matminer.featurizers.composition.ElementProperty.from_preset("magpie")</code>)
+to automatically generate many features. Show the input (list of
+compositions) and the output (DataFrame of features).</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example using a hypothetical function</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># features = calculate_simple_features(df[&#39;composition_column&#39;])</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># print(features.head())</span></span></code></pre></div></li>
+<li><p><strong>Combine Data:</strong> Merge the generated features back
+with the original DataFrame. Show the final table ready for ML.</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># final_df = pd.concat([df, features], axis=1)</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># print(final_df.head())</span></span></code></pre></div></li>
+</ol></li>
+</ul>
+<hr />
+<h2 id="part-4-qa-look-ahead">Part 4: Q&amp;A &amp; Look Ahead</h2>
 <ul>
 <li><p><strong>Any Questions?</strong></p></li>
-<li><p><strong>Preparation for Next Class:</strong></p>
+<li><p><strong>Think about:</strong></p>
 <ul>
-<li>Ensure you can access Google Colab (<a
-href="https://colab.research.google.com/">https://colab.research.google.com/</a>).</li>
-<li>(Optional) If you’re new to Python, browse a basic tutorial (links
-can be provided).</li>
-<li>Think about: How would you represent a simple material like water
-(H₂O) or salt (NaCl) as data for a computer?</li>
+<li>Why do we need different types of features (compositional
+vs. structural)?</li>
+<li>How might the <em>way</em> we represent data (the features we
+choose) affect the performance of a machine learning model later?</li>
+<li>Consider a recipe: What are its “composition”, “processing”,
+“structure” (maybe presentation?), and “properties” (taste, texture)?
+How would you featurize a recipe?</li>
 </ul></li>
-<li><p><strong>Next Time:</strong> Diving deeper into representing
-materials data and features.</p></li>
+<li><p><strong>Next Time:</strong> Finding and Wrangling Materials Data
+- Where does this data come from, and why is it often messy?</p></li>
 </ul>
 <hr />
 <p><strong>Thank You!</strong></p>
