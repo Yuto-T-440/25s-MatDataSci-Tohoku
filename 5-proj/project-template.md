@@ -120,11 +120,41 @@ For the updates:
 
 ## Explanation of your data set
 
-* How many variables?
+* How many variables? 
+  - $26$ variables 
 * What are the data classes?
+  - compounds:dtype = object 
+  - atoms:dtype = object
+  - freqs:dtype = object
+  - vibmodes:dtype = object
+  - zpves:dtype = float64
+  - U0:dtype = float64
+  - U298:dtype = float64
+  - H:dtype = float64
+  - S:dtype = float64
+  - G:dtype = float64
+  - Cv:dtype = float64
+  - Cp:dtype = float64
+  - coordinates:dtype = object
+  - Vesp:dtype = object
+  - Qmulliken:dtype = object
+  - dipole:dtype = object
+  - quadrupole:dtype = object
+  - octupole: dtype = object
+  - hexadecapole:dtype = object
+  - rots:dtype = object
+  - gap:  dtype = float64
+  - Eee: dtype = float64
+  - Exc:dtype = float64
+  - Edisp: dtype = float64
+  - Etot:dtype = float64
+  - Eatomization:  dtype = float64
 * How many levels of factors for factor variables?
+  - aa
 * Is your data suitable for a project analysis?
+  - Yes, we think. Sufficient variables are included in this dataset.
 * Write you databook, defining variables, units and structures
+  - a
 
 ## Data Cleaning
 
