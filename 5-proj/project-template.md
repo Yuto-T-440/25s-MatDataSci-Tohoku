@@ -150,7 +150,8 @@ Our goal is to **train a neural network to accurately predict key molecular prop
   - Etot:dtype = float64
   - Eatomization:  dtype = float64
 * How many levels of factors for factor variables?
-  - aa
+  - atoms$\to$ level $10$.
+  - compounds$\to$ level $784837$.
 * Is your data suitable for a project analysis?
   - Yes, we think. Sufficient variables are included in this dataset.
 * Write you databook, defining variables, units and structures
