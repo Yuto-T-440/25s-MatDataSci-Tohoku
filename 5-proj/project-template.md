@@ -98,18 +98,18 @@ For the updates:
   + Model output
   + Overall conclusions
 
-# Abstract
+The accurate prediction of molecular properties from structural information is essential for accelerating discovery in chemistry and materials science. While Density Functional Theory (DFT) provides reliable quantum mechanical predictions, its high computational cost limits its applicability in large-scale screening. In this study, we develop a neural network-based regression model to predict molecular properties—specifically total energy—directly from three-dimensional atomic coordinates. Using the **DFT_all.npz** dataset available from [Zenodo](https://zenodo.org/records/11164951), which contains a variety of DFT-computed properties for small organic molecules, we train the model in a supervised manner to learn the structure–property relationship. Our results demonstrate that neural networks can effectively approximate DFT-level accuracy while significantly reducing computation time. This work highlights the potential of machine learning as a scalable alternative to traditional quantum chemical simulations, enabling faster exploration of chemical space for materials and drug design.
 
-* Summary of the nature, finding and meaning of your data analysis project. 
-* 1 paragraph written summary of your data analysis project
-   
+
 # Introduction
 
-* Background and motivation of the Data Science question. The ``Why'' of the research
-* Explanation of your data
-  + Where is your data from
-  + What are the variables
-* What data would be necessary to improve your analysis?
+Predicting molecular properties directly from structural information is a fundamental task in computational chemistry and materials science. Traditionally, this is achieved through quantum mechanical methods such as Density Functional Theory (DFT), which provide accurate predictions but are computationally expensive and limited in scalability. As the demand grows for rapid property evaluation in high-throughput screening and molecular design, data-driven alternatives have gained significant attention.
+
+Recent advances in machine learning, particularly neural networks, have opened new pathways for modeling the complex relationship between a molecule’s structure and its physicochemical properties. These models can learn from large datasets of precomputed molecular structures and properties to make fast, accurate predictions without relying on costly simulations.
+
+In this project, we focus on **predicting molecular properties from 3D molecular structures** using supervised learning with neural networks. We use the **DFT_all.npz** dataset, derived from DFT calculations and available through [Zenodo](https://zenodo.org/records/11164951), which contains atomic coordinates and quantum-level properties for a variety of small organic molecules.
+
+Our goal is to **train a neural network to accurately predict key molecular properties—such as total energy—from 3D atomic coordinates**, thereby capturing the structure–property relationship encoded in quantum mechanical simulations. This approach aims to demonstrate how machine learning models can serve as efficient surrogates for DFT, accelerating materials discovery and molecular design through predictive modeling.
    
 # Data Science Methods
 
