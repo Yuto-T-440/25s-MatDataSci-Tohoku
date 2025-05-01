@@ -121,7 +121,7 @@ Our goal is to **train a neural network to accurately predict key molecular prop
 ## Explanation of your data set
 
 * How many variables? 
-  - $26$ variables 
+  - 784875 data elements described by 26 
 * What are the data classes?
   - compounds:dtype = object 
   - atoms:dtype = object
