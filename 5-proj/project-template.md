@@ -98,6 +98,8 @@ For the updates:
   + Model output
   + Overall conclusions
 
+# Abstract
+
 The accurate prediction of molecular properties from structural information is essential for accelerating discovery in chemistry and materials science. While Density Functional Theory (DFT) provides reliable quantum mechanical predictions, its high computational cost limits its applicability in large-scale screening. In this study, we develop a neural network-based regression model to predict molecular properties—specifically total energy—directly from three-dimensional atomic coordinates. Using the **DFT_all.npz** dataset available from [Zenodo](https://zenodo.org/records/11164951), which contains a variety of DFT-computed properties for small organic molecules, we train the model in a supervised manner to learn the structure–property relationship. Our results demonstrate that neural networks can effectively approximate DFT-level accuracy while significantly reducing computation time. This work highlights the potential of machine learning as a scalable alternative to traditional quantum chemical simulations, enabling faster exploration of chemical space for materials and drug design.
 
 
@@ -113,9 +115,13 @@ Our goal is to **train a neural network to accurately predict key molecular prop
    
 # Data Science Methods
 
-* To be applied (such as image processing, time-series analysis, spectral analysis etc)
-* Define critical capabilities and identify packages you will draw upon
+We decided to realize a Property prediction of the elements from their 3D molecular structure. We will use Supervising trqining on Neural Network. To do so we will use the 3D properties of the molecules as training inputs, then we will train the network with the use of the desired Property (Atomization Energy for example) as a label.
 
+The input data should need no pretreatment. The output label should be a continous value defining the property of the element.
+
+The dataset is composed of 784875 element wich is a quite huge amount of data (to compare, MNIST which is a basic digit recognition dataset contains 70000 elements) so the split between training subset and test subset should be relevant.
+
+The main limit of this method is for each property we would lik to predict, we would have to entirely redo the training with a different label.
 # Exploratory Data Analysis
 
 ## Explanation of your data set
@@ -123,10 +129,10 @@ Our goal is to **train a neural network to accurately predict key molecular prop
 * How many variables? 
   - 784875 data elements described by 26 
 * What are the data classes?
-  - compounds:dtype = object 
-  - atoms:dtype = object
-  - freqs:dtype = object
-  - vibmodes:dtype = object
+  - compounds : dtype = array 
+  - atoms : dtype = array
+  - freqs:dtype = array
+  - vibmodes:dtype = array
   - zpves:dtype = float64
   - U0:dtype = float64
   - U298:dtype = float64
@@ -135,14 +141,14 @@ Our goal is to **train a neural network to accurately predict key molecular prop
   - G:dtype = float64
   - Cv:dtype = float64
   - Cp:dtype = float64
-  - coordinates:dtype = object
-  - Vesp:dtype = object
-  - Qmulliken:dtype = object
-  - dipole:dtype = object
-  - quadrupole:dtype = object
-  - octupole: dtype = object
-  - hexadecapole:dtype = object
-  - rots:dtype = object
+  - coordinates:dtype = array
+  - Vesp:dtype = array
+  - Qmulliken:dtype = array
+  - dipole:dtype = array
+  - quadrupole:dtype = array
+  - octupole: dtype = array
+  - hexadecapole:dtype = array
+  - rots:dtype = array
   - gap:  dtype = float64
   - Eee: dtype = float64
   - Exc:dtype = float64
@@ -155,7 +161,33 @@ Our goal is to **train a neural network to accurately predict key molecular prop
 * Is your data suitable for a project analysis?
   - Yes, we think. Sufficient variables are included in this dataset.
 * Write you databook, defining variables, units and structures
-  - a
+  - |  variables   | units    | discreption |
+    |--------------|------------------|-----|
+    | compounds            |          |Stoichiometric formulas of the molecules
+    | atoms    |        |  Atomic numbers in the molecule  
+     |   freqs     |   $\text{cm}^{-1}$       |     Vibrational frequencies obtained from harmonic frequency analysis.    |
+    | vibmodes    |     $\r{A}$     |    Normal modes of vibration represented as displacement vectors.      |
+    | U0    |      Ha     |     Internal energy at 0 K     |
+    | U298    |       Ha      |    Internal energy at 298 K      |
+    | H    |           Ha     |     Enthalpy      |
+    | S    |                |     Entropy      |
+    | G    |            Ha    |     Gibbs free energy     |
+    | Cv    |               |    Heat capacity at constant volume      |
+    | Cp    |               |    Heat capacity at constant pressure       |
+    |  coordinates   |               |    coordinates (XYZ) of atoms in the molecule.      |
+    | Vesp    |                |     Electrostatic potential     | 
+    |  Qmulliken |             |     Mulliken atomic charges     | 
+    | dipole   |          a.u.     |    	Dipole moment       |
+    | quadrupole    |    a.u.      |     Quadrupole moment     |
+    | octupole    |       a.u.     |    	Octupole moment      |
+    | hexadecapole    |     a.u.      |     Hexadecapole moment     |
+    | rots    |              MHz     |     Rotational constants of the molecule.     |
+    | gaps    |              Ha     |     	HOMO-LUMO energy gap     |
+    |  Eee   |             Ha      |     Electron-electron repulsion energy     |
+    | Exc    |               Ha     |     Exchange-correlation energy     |
+    | Edisp    |            Ha      |    	Dispersion correction energy      |
+    | Etot    |               Ha    |    Total electronic energy      |
+    |   Eatomization  |      Ha     |     Atomization energy     | 
 
 ## Data Cleaning
 
