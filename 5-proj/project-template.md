@@ -191,7 +191,7 @@ The main limit of this method is for each property we would lik to predict, we w
 
 ## Data Cleaning
 
-* "We performed data cleaning as follows:
+* We performed data cleaning as follows:
  ```python
   # Filter fixed-length molecules (same n_atoms)
 n_atoms_arr = np.array([len(a) for a in atoms])
