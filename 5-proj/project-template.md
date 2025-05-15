@@ -237,7 +237,10 @@ Y = np.array([
 
 ## Data Vizualizations
 
-* Vizualizations of your data
+* Here is data visualizations (DFT_all.npz):
+  - variable correlations
+    - ![Data Zisualization](https://github.com/user-attachments/assets/102d33c3-3d8c-44c9-b1e4-10ea8cf5b6f0)
+
 
 ## Variable Correlations
 
