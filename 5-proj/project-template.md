@@ -219,7 +219,7 @@ Y = np.array([
     - ```python n_atoms_arr = np.array([len(a) for a in atoms])```
   - 2 Find the most common atom count among all molecules.
     - ```python most_common_n = Counter(n_atoms_arr).most_common(1)[0][0]```
-  - 3 Filter the data to keep only the molecules with that common atom count.
+  - 3 Filter the data to keep only the molecules with that common atom count (when using a CNN, the input data must have consistent dimensions). 
     - ```python
       filtered_data = [
       (coord, atom) for coord, atom in zip(coordinates, atoms)
