@@ -214,6 +214,26 @@ Y = np.array([
     y for y, atom in zip(Y_all, atoms) if len(atom) == most_common_n
 ])
 ```
+* Discription of this code
+  - 1 Count the number of atoms in each molecule.
+    - ```python n_atoms_arr = np.array([len(a) for a in atoms])```
+  - 2 Find the most common atom count among all molecules.
+    - ```python most_common_n = Counter(n_atoms_arr).most_common(1)[0][0]```
+  - 3 Filter the data to keep only the molecules with that common atom count.
+  - 4 Build the input features X by stacking atomic coordinates ```python[x, y, z]``` with atomic numbers Z.
+    - ```python
+      X = np.array([
+        np.hstack([coord, atom.reshape(-1, 1)])  # shape: (n_atoms, 4)
+        for coord, atom in zip(filtered_coords, filtered_atoms)
+      ])
+      ```
+   - 5 Define taeget values Y.
+     - ```python
+       targets = ['U0', 'H', 'gap']
+         Y_all = np.column_stack([data[prop] for prop in targets])
+         Y = np.array([
+         y for y, atom in zip(Y_all, atoms) if len(atom) == most_common_n 
+       ])```
 
 ## Data Vizualizations
 
@@ -221,7 +241,9 @@ Y = np.array([
 
 ## Variable Correlations
 
-* Pairwise correlation plots, etc.
+* Here is variable correlations:
+  - ![Data_correlations](https://github.com/user-attachments/assets/d01a851a-5091-48e2-b70d-9561038c00c5)
+
   
 # Statistical Learning: Modeling \& Prediction
 
