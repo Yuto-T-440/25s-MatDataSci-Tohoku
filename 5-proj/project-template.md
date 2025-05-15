@@ -220,6 +220,14 @@ Y = np.array([
   - 2 Find the most common atom count among all molecules.
     - ```python most_common_n = Counter(n_atoms_arr).most_common(1)[0][0]```
   - 3 Filter the data to keep only the molecules with that common atom count.
+    - ```python
+      filtered_data = [
+      (coord, atom) for coord, atom in zip(coordinates, atoms)
+      if len(atom) == most_common_n
+      ]
+      filtered_coords = [c for c, _ in filtered_data]
+      filtered_atoms = [a for _, a in filtered_data]
+      ```
   - 4 Build the input features X by stacking atomic coordinates ```python[x, y, z]``` with atomic numbers Z.
     - ```python
       X = np.array([
