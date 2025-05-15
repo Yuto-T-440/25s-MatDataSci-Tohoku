@@ -191,7 +191,29 @@ The main limit of this method is for each property we would lik to predict, we w
 
 ## Data Cleaning
 
-* What you had to do to clean your data
+* "We performed data cleaning as follows:
+ ```python
+  # Filter fixed-length molecules (same n_atoms)
+n_atoms_arr = np.array([len(a) for a in atoms])
+most_common_n = Counter(n_atoms_arr).most_common(1)[0][0]
+filtered_data = [
+    (coord, atom) for coord, atom in zip(coordinates, atoms)
+    if len(atom) == most_common_n
+]
+filtered_coords = [c for c, _ in filtered_data]
+filtered_atoms = [a for _, a in filtered_data]
+# Construct X as 3D input: [x, y, z, Z]
+X = np.array([
+    np.hstack([coord, atom.reshape(-1, 1)])  # shape: (n_atoms, 4)
+    for coord, atom in zip(filtered_coords, filtered_atoms)
+])
+# Select targets
+targets = ['U0', 'H', 'gap']
+Y_all = np.column_stack([data[prop] for prop in targets])
+Y = np.array([
+    y for y, atom in zip(Y_all, atoms) if len(atom) == most_common_n
+])
+```
 
 ## Data Vizualizations
 
