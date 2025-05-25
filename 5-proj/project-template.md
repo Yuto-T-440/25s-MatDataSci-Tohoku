@@ -25,7 +25,7 @@ header-includes:
   - \usepackage{lipsum}
 ---
 
-```{.python .pandoc-pyplot caption="Python Setup" output="setup.png" include=FALSE}
+<!--```{.python .pandoc-pyplot caption="Python Setup" output="setup.png" include=FALSE}
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -49,7 +49,7 @@ Italic Text:  _Krishna_
 Code Chunk:
 ```python
 import os
-```
+```-->
 # Guides for Writing your report
 
 For the full document:
@@ -258,19 +258,78 @@ Y = np.array([
   
 # Statistical Learning: Modeling \& Prediction
 
-*  least 1 simple linear model (or simple logistic model)
-* requires the appropriate modeling for your data set including machine learning
-
-* Types of modeling to try
-* Statistical prediction/modeling
-* Model selection
-* Cross-validation, Predictive R2
-* Interpret results
-* Challenge results
+* Case 1 (CNN)
+  - Results
+    - Validation metric
+      |  Metric   | Values                   |
+      |-----------|-------------------------|
+      | Test MAE  | 0.0852                  |
+      | Test Loss |           0.1501          |
+      | Best Validation MAE         |  0.1491 at Epoch 64      |
+      |   Best Validation Loss(MSE)       |   0.0836 at Epoch 64     |
+      |   Early Stopping Epoch       |   Triggered at 64     |
+  - Observation (Trainig vs Validation MAE)
+    ![image](https://github.com/user-attachments/assets/73997181-eea9-477f-be00-f1524aa96cbd)
+    - There is a steady decrease in both MAE.
+    - **Validatn MAE** stabilizes around **0.15**, which is very low.
+    - Both MAE curve indicate that there is no **overfitting**.
+    - The Validation curve flattens out after Epoch 64.
    
-# Discussion
+    ![image](https://github.com/user-attachments/assets/21a1c31d-f72b-41be-aae8-67644508be0d)
+  - Observation (Training vs Validation Loss)
+    - There is a steady decrease in both Loss.
+    - Both cyurves flatten around Epoch 60.
+    - No visible sign of **overfitting**, because the validation loss closely follows the training loss.
+    - Final MSE values shows a very good score.
+   
+  - Summary
+  ![image](https://github.com/user-attachments/assets/edee355d-758f-4ad8-8dcf-b979340c544e)
 
-* Discussion of the answers to the data science questions framed in the introduction
+* Case 2 (GNN)
+  - Results
+    - Validation metric
+      |Metric|Values|
+      |------|------|
+      |Test MAE|92.0787|
+      |Test Loss(MSE)|0.718738125|
+      |Validation MAE|92.9349441528|
+      |validation Loss(MSE)|0.7029326735|
+
+      |Metric|Values|
+      |------|------|
+      |U0|277.143677|
+      |gap|0.0369988717|
+      |H|277.143005|
+      |dip_x|1.40786136|
+      |dip_y|1.07787681|
+      |dip_z|0.806750417|
+  - Observation (Validation MAE over Epochs)
+    ![image](https://github.com/user-attachments/assets/ca6fda89-4c78-4f37-abb6-40ec0f3078a9)
+    - By observing Epoch 1 and 2, we can see that this model learned **quickly** in training.
+    - The validation MAE stabilizes around epoch 10. This indicates that this model is **converging**.
+    - It can be seen that this model has **no overfitting**.
+    - The final MAE is around 93--94. This shows that this model achieved a relatively low and stable error across the validation set.
+
+  - Observation (Training vs Validation Loss)
+    ![image](https://github.com/user-attachments/assets/7a6b705d-ebbc-4ff9-9bba-a002bc497666)
+    - There is a steady decrease in both curve.
+    - The training loss remains **sufficiently stable** after epoch 20, whereas the validation loss **fluctuates** around epoch 30.
+    - **No indications of overfitting** are observed.
+    - The final MSE is higher than **Case 1**.
+
+  - Observation (Per-Target Validation MAE)
+    ![image](https://github.com/user-attachments/assets/743fd11f-4b09-4fef-b442-3eedd624aeb2)
+    - The validation MAE for H is relatively high. This indicates that this model is **unable to make accurate predictions for H**.
+    - It can be seen that the predictions for dip_x, dip_y, and dip_z **does not work**.
+    - Gap has an order ten time shorter than its classical values, so the gap prediction seems to work.
+  - Summary
+    ![image](https://github.com/user-attachments/assets/0ecb5ea5-03df-4bd4-9d21-06a6a46c302e)
+    ![image](https://github.com/user-attachments/assets/e14b7828-b9b1-4b66-b7ee-c710275698d0)
+
+
+# Discussion
+![image](https://github.com/user-attachments/assets/a2bead55-19ae-44b8-9756-c19ccaa8fb3c)
+
   
 # Conclusions
    
