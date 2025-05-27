@@ -246,14 +246,20 @@ Y = np.array([
 ## Data Vizualizations
 
 * Here is data visualizations (DFT_all.npz):
-  - variable correlations
-    - ![Data Zisualization](https://github.com/user-attachments/assets/102d33c3-3d8c-44c9-b1e4-10ea8cf5b6f0)
+  - variable correlations (float type variables)
+    ![Data Zisualization](https://github.com/user-attachments/assets/102d33c3-3d8c-44c9-b1e4-10ea8cf5b6f0)
 
 
 ## Variable Correlations
 
 * Here is variable correlations (DFT_all.npz):
-  - ![Data_correlations](https://github.com/user-attachments/assets/d01a851a-5091-48e2-b70d-9561038c00c5)
+  - variable correlations (float type variables)
+  ![Data_correlations](https://github.com/user-attachments/assets/d01a851a-5091-48e2-b70d-9561038c00c5)
+  - variable correlations (gap and U0)
+    ![image](https://github.com/user-attachments/assets/7aaaf94a-348d-406e-b388-a09540d2b93e)
+     - We can see that atoms can not explain about U0 sufficiently. This suggests that the prediction accuracy for U0 may not be very high.
+     - The model indicates that the number of hydrogen in the atoms leads to improved band gap prediction accuracy.
+  
 
   
 # Statistical Learning: Modeling \& Prediction
