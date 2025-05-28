@@ -338,9 +338,26 @@ Y = np.array([
 
   
 # Conclusions
-   
+## Comparison of CNN and GNN
+- CNN experience
+  - **(Validation-Train)MAE=0.0639**. 
+  - **(Validation-Train)Loss=0.0665**.
+  - This training model has an outstanding generalization error. Therefore, it is considered capable of handling new data effectively.
+- GNN experiene
+  - **(Validation-Train)MAE=92.9349441528**
+  - **(Validation-Train)Loss<2(per target)**
+  - This model has a good generalization error. However, each value of MAE and Loss is higher than CNN experiment.
+ 
+## Future work
+- The CNN modeling achieved high accuracy in learning target variables.
+- GNN modeling successfully achieved high accuracy in learning a specific target variable (e.g. band gap). It can also be observed that the generalization error remains within a small range.
+- By combining DFT and QM9 datasets, it may be possible to achieve even better results.
+
+
+
+    
 # Acknowledgments
-   
+We would like to express sincere thanks to the professor Pawan Tripathi for delivering such an engaging, informative lecture, and variable comments and remarks. Our project featured an in-depth and productive discussion.
 # References
 
 * Include a bib file in the markdown report
