@@ -360,5 +360,4 @@ Y = np.array([
 We would like to express sincere thanks to the professor Pawan Tripathi for delivering such an engaging, informative lecture, and variable comments and remarks. Our project featured an in-depth and productive discussion.
 # References
 
-* Include a bib file in the markdown report
-* Or hand written citations.
+* K. Danish, B. Anouar, K. Scott, G. F. von Rudorff, and A. von Lilienfeld : *Vector-QM24 (VQM24) dataset*, Zendo, https://zenodo.org/records/15442257 (2025).
